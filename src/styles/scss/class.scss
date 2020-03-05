@@ -1,0 +1,20 @@
+.stone-print__hidden {
+  @media print {
+    display: none !important;
+  }
+}
+.stone-print__show {
+  display: none !important;
+  @media print {
+    display: block !important;
+  }
+}
+
+.stone-photo-like__desktop {
+  border: 10px solid #fff;
+  box-shadow: -1px 1px 7px #000;
+}
+.stone-photo-like__mobile {
+  border: 5px solid #fff;
+  box-shadow: -1px 1px 5px #000;
+}

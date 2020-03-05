@@ -1,0 +1,14 @@
+@import "@/styles/scss/variables.scss";
+
+body {
+  background-color: $stoneBlack;
+  background-image: url("http://public.pea3nut.org/img/uchu01.bg.jpg");
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #0275d8;
+  text-decoration: none;
+}
