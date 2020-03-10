@@ -23,7 +23,6 @@ export default {
       'classData',
       function _self(value) {
         // self excute useClassData()
-        console.log('useClassData')
         useClassData(value, this.$el)
         return _self
       }.call(this, this.classData)
