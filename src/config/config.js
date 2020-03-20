@@ -1,5 +1,5 @@
 
-const LastUpdateTime = 1583726475395;
+const LastUpdateTime = 1584678494646;
 
 const FragmentNormal = [
     '就是因为无法认同镜中的自己才会自取灭亡',

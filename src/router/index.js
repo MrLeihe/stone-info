@@ -1,34 +1,50 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue";
+import Router from "vue-router";
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
-  mode: 'hash',
+  mode: "hash",
   routes: [
     {
-      path: '/normal',
-      name: 'normal',
-      /* lazy load */
-      component: () => import(/* webpackChunkName: "group-foo" */ '@/components/pages/page-normal.vue')
+      path: "/",
+      redirect: "/normal"
     },
     {
-      path: '/job',
-      name: 'Job',
+      path: "/normal",
+      name: "normal",
       /* lazy load */
-      component: () => import(/* webpackChunkName: "group-foo" */ '@/components/pages/page-job.vue')
+      component: () =>
+        import(
+          /* webpackChunkName: "group-foo" */ "@/components/pages/page-normal.vue"
+        )
     },
     {
-      path: '/acg',
-      name: 'acg',
+      path: "/job",
+      name: "Job",
       /* lazy load */
-      component: () => import(/* webpackChunkName: "group-foo" */ '@/components/pages/page-acg.vue')
+      component: () =>
+        import(
+          /* webpackChunkName: "group-foo" */ "@/components/pages/page-job.vue"
+        )
     },
     {
-      path: '/about',
-      name: 'About',
+      path: "/acg",
+      name: "acg",
       /* lazy load */
-      component: () => import(/* webpackChunkName: "group-foo" */ '@/components/pages/page-about.vue')
+      component: () =>
+        import(
+          /* webpackChunkName: "group-foo" */ "@/components/pages/page-acg.vue"
+        )
     },
+    {
+      path: "/about",
+      name: "About",
+      /* lazy load */
+      component: () =>
+        import(
+          /* webpackChunkName: "group-foo" */ "@/components/pages/page-about.vue"
+        )
+    }
   ]
-})
+});

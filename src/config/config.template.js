@@ -1,5 +1,5 @@
-const path = require('path')
-const fs = require('fs')
+const path = require("path");
+const fs = require("fs");
 
 const content = `
 const LastUpdateTime = ${Date.now()};
@@ -55,6 +55,6 @@ export {
     FragmentAcg,
     Info
 }
-`
+`;
 
-fs.writeFile(path.resolve(__dirname, './config.js'), content, 'utf8')
+fs.writeFile(path.resolve(__dirname, "./config.js"), content, "utf8", () => {});
